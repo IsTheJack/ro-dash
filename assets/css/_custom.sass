@@ -1,0 +1,96 @@
+$width-side-left: 250px
+$height-header: 60px
+
+a:hover
+    text-decoration: none
+
+.ro-main-header section
+    height: $height-header
+    z-index: 99
+
+.options-container
+    background-color: $color-one
+    margin-left: $width-side-left
+
+    .ro-fade
+        height: $height-header
+        background: darken($color-one, 6)
+        background: -moz-linear-gradient(left, darken($color-one, 6) 0%, $color-one 100%)
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,darken($color-one, 6)), color-stop(100%,$color-one))
+        background: -webkit-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+        background: -o-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+        background: -ms-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+        background: linear-gradient(to right, darken($color-one, 6) 0%,$color-one 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($color-one, 6)', endColorstr='$color-one',GradientType=1 )
+
+.ro-font-logo-container
+    background-color: $color-one
+    position: relative
+    width: $width-side-left
+    float: left
+    top: -5px
+    margin-right: 10px
+
+    &:before
+        position: absolute
+        content: ""
+        right: -10px
+        bottom: -5px
+        border-left: 10px solid #C54B34
+        border-bottom: 5px solid transparent
+
+    h1
+        text-align: center
+        margin: 15px 0
+        color: #fff
+        font-size: 22pt
+
+// Main Menu
+.ro-menu-container
+    position: relative
+    border-right: 1px solid $color-two-dark-one
+    top: -5px
+    display: block
+    background-color: $color-two
+    width: $width-side-left
+    min-height: 100%
+    margin-top: - $height-header
+    padding-top: $height-header
+
+    ul, li
+        width: 100%
+        list-style-type: none
+        margin: 0
+        padding: 0
+
+    .ro-one-lvl
+        border-bottom: 1px solid $color-two-dark-one
+
+        .ro-dropdown
+            display: block
+            color: $color-two-dark-two
+            font-size: 11pt
+            padding: 15px ($width-side-left/8)
+
+            .icon-before
+                margin-right: 15px
+
+            .icon-after
+                float: right
+                margin-top: 5px
+
+            &:hover
+                -webkit-transition: .5s
+                -o-transition: .5s
+                transition: .5s
+                background-color: $color-two-dark-two
+                color: #fff
+                border-left: 25px solid $color-one
+
+.ro-header-menu
+    text-align: center
+    background-color: $color-two-dark-one
+    h2
+        font-size: 13pt !important
+        margin: 0
+        padding: 5px 0
