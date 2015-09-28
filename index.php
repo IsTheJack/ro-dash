@@ -22,8 +22,14 @@
 					<div class="col-xs-6 ro-fade"></div>
 					<div class="ro-options-container">
 						<ul class="ro-options-nav">
-							<li><a href="#">Username</a></li>
-							<li><a href="#">Log out</a></li>
+							<li class="ro-menu-button">
+								<a href="#" class="ro-menu-button-link">
+									<i class="fa fa-user icon-before"></i>Username<i class="fa fa-caret-down icon-after"></i>
+								</a>
+							</li><!--
+							--><li class="ro-menu-button">
+								<a href="#" class="ro-menu-button-link"><i class="fa fa-power-off icon-before"></i>Log out</a>
+							</li>
 						</ul>
 					</div>
 			</section>
@@ -36,19 +42,19 @@
 					
 					<li class="ro-one-lvl">
 						<a class="ro-dropdown" href="#">
-							<i class="fa fa-desktop icon-before"></i>Menu 1<i class="fa fa-caret-right icon-after"></i>
+							<i class="fa fa-desktop icon-before"></i>Add Product<i class="fa fa-caret-right icon-after"></i>
 						</a>
 					</li>
 					
 					<li class="ro-one-lvl">
 						<a class="ro-dropdown" href="#">
-							<i class="fa fa-heart icon-before"></i>Menu 1<i class="fa fa-caret-right icon-after"></i>
+							<i class="fa fa-heart icon-before"></i>Category<i class="fa fa-caret-right icon-after"></i>
 						</a>
 					</li>
 
 					<li class="ro-one-lvl">
 						<a class="ro-dropdown" href="#">
-							<i class="fa fa-graduation-cap icon-before"></i>Menu 1<i class="fa fa-caret-right icon-after"></i>
+							<i class="fa fa-graduation-cap icon-before"></i>Learning<i class="fa fa-caret-right icon-after"></i>
 						</a>
 					</li>
 				</ul>

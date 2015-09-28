@@ -23,6 +23,32 @@ a:hover
         background: linear-gradient(to right, darken($color-one, 6) 0%,$color-one 100%)
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($color-one, 6)', endColorstr='$color-one',GradientType=1 )
 
+.ro-options-container
+    height: inherit
+
+.ro-options-nav
+    margin: 0
+    padding: 0
+    float: right
+    height: inherit
+
+.ro-menu-button
+    display: inline-block
+    text-align: center
+    height: inherit
+    
+
+.ro-menu-button-link
+    display: block
+    padding: 17px 30px
+    color: $light-font
+    font-size: 13pt
+    border-left: 1px solid darken($color-one, 6)
+    height: inherit
+    &:hover
+        background-color: darken($color-one, 4)
+        color: $light-font
+
 .ro-font-logo-container
     background-color: $color-one
     position: relative
@@ -72,13 +98,6 @@ a:hover
             font-size: 11pt
             padding: 15px ($width-side-left/8)
 
-            .icon-before
-                margin-right: 15px
-
-            .icon-after
-                float: right
-                margin-top: 5px
-
             &:hover
                 -webkit-transition: .5s
                 -o-transition: .5s
@@ -94,3 +113,10 @@ a:hover
         font-size: 13pt !important
         margin: 0
         padding: 5px 0
+
+.icon-before
+    margin-right: 15px
+
+.icon-after
+    float: right
+    margin: 5px 0 0 15px
