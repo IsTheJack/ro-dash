@@ -26,7 +26,7 @@
 								<a href="#" class="ro-menu-button-link">
 									<i class="fa fa-user icon-before"></i>Username<i class="fa fa-caret-down icon-after"></i>
 								</a>
-							</li><!--
+							</li><!-- White space commented
 							--><li class="ro-menu-button">
 								<a href="#" class="ro-menu-button-link"><i class="fa fa-power-off icon-before"></i>Log out</a>
 							</li>
