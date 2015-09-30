@@ -1,1 +1,5 @@
 /bower_components
+/node_modules
+/assets/third_party
+/assets/js/build
+/assets/css/build

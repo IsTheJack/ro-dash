@@ -1,0 +1,31 @@
+{
+  "name": "ro-dash",
+  "version": "1.0.0",
+  "description": "Simple Dashboard with SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsTheJack/ro-dash.git"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "Roberto <robertooliveiraestudo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsTheJack/ro-dash/issues"
+  },
+  "homepage": "https://github.com/IsTheJack/ro-dash#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.7",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5"
+  }
+}
