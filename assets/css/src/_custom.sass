@@ -12,16 +12,16 @@ a:hover
     background-color: $color-one
     margin-left: $width-side-left
 
-    .ro-fade
-        height: $height-header
-        background: darken($color-one, 6)
-        background: -moz-linear-gradient(left, darken($color-one, 6) 0%, $color-one 100%)
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%,darken($color-one, 6)), color-stop(100%,$color-one))
-        background: -webkit-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
-        background: -o-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
-        background: -ms-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
-        background: linear-gradient(to right, darken($color-one, 6) 0%,$color-one 100%)
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($color-one, 6)', endColorstr='$color-one',GradientType=1 )
+.ro-fade
+    height: $height-header
+    background: darken($color-one, 6)
+    background: -moz-linear-gradient(left, darken($color-one, 6) 0%, $color-one 100%)
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,darken($color-one, 6)), color-stop(100%,$color-one))
+    background: -webkit-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+    background: -o-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+    background: -ms-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+    background: linear-gradient(to right, darken($color-one, 6) 0%,$color-one 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($color-one, 6)', endColorstr='$color-one',GradientType=1 )
 
 .ro-options-container
     height: inherit
@@ -36,7 +36,6 @@ a:hover
     display: inline-block
     text-align: center
     height: inherit
-    
 
 .ro-menu-button-link
     display: block
@@ -52,18 +51,27 @@ a:hover
 .ro-font-logo-container
     background-color: $color-one
     position: relative
-    width: $width-side-left
+    width: $width-side-left + 10
     float: left
     top: -5px
     margin-right: 10px
+    z-index: 10
 
     &:before
         position: absolute
         content: ""
-        right: -10px
+        right: 0
         bottom: -5px
         border-left: 10px solid #C54B34
         border-bottom: 5px solid transparent
+
+    &:after
+        position: absolute
+        content: ""
+        right: 0
+        bottom: -5px
+        border-right: 10px solid #F07A63
+        border-top: 5px solid transparent
 
     h1
         text-align: center
@@ -82,6 +90,7 @@ a:hover
     min-height: 100%
     margin-top: - $height-header
     padding-top: $height-header
+    float: left
 
     ul, li
         width: 100%
@@ -108,11 +117,11 @@ a:hover
 
 .ro-header-menu
     text-align: center
-    background-color: $color-two-dark-one
     h2
-        font-size: 13pt !important
+        font-size: 15pt !important
         margin: 0
-        padding: 5px 0
+        padding: 20px 0
+        color: $dark-font
 
 .icon-before
     margin-right: 15px
@@ -120,3 +129,50 @@ a:hover
 .icon-after
     float: right
     margin: 5px 0 0 15px
+
+// Content part
+.ro-container-content
+    z-index: -1
+    position: relative
+    margin-left: $width-side-left
+    margin-top: -$height-header
+    margin-right: -15px
+    padding-top: $height-header
+    padding-bottom: 30px
+    min-height: 100%
+
+    .ro-content-title
+        margin: 0px 0px 0px -15px
+        padding: 10px 25px
+        background-color: $color-two-dark-one
+        color: $dark-font
+        font-size: 24pt
+
+.ro-content-footer
+    position: absolute
+    height: 30px
+    width: 100%
+    background-color: $color-two-dark-two
+    bottom: 0
+    left: 0
+    text-align: right
+    padding-top: 5px
+
+    &:before
+        content: ""
+        position: absolute
+        left: -15px
+        top: 0
+        display: inline-block
+        height: 30px
+        width: 15px
+        background: $color-two-dark-two
+
+    h1
+        font-size: 10pt
+        display: inline
+        color: $light-font
+        margin: 0 15px
+
+    a
+        color: $light-font
