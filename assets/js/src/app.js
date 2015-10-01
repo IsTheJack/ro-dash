@@ -1,15 +1,12 @@
-'use strict';
-var App = (function() {
-	var a = 1;
-	var b = 2;
-	var c = 3;
-	var that = this;
-
-	function sum () {
-		return that.a + that.b + that.c;
-	}
-
-	return {
-		"sum": sum
-	};
-})();
+// Dropdown of main menu level one
+$(document).ready(function() {
+	var mainMenu = $('.ro-dropdown');
+	mainMenu.RoDropdown(function() {
+		if(!mainMenu.is( ":hidden" )) {
+			mainMenu.next().slideUp("medium");
+			mainMenu.removeClass("active");
+			var icon = mainMenu.children('.fa-caret-down');
+			icon.removeClass('fa-caret-down').addClass('fa-caret-right');
+		}
+	});
+});

@@ -8,9 +8,9 @@ var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('uglify', function() {
 	return gulp
-		.src(['assets/js/**/*.js'])
+		.src(['assets/js/src/*.js'])
 		.pipe(uglify())
-		.pipe(gulp.dest('assets/js/build/js'));
+		.pipe(gulp.dest('assets/js/build/src'));
 });
 
 gulp.task('sass', function() {

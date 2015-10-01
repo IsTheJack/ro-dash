@@ -12,64 +12,96 @@
 </head>
 <body>
 	<div class="ro-dash container-fluid">
-		<!-- Header bar of the dashboard -->
-		<header class="ro-main-header row">
-			<section class="ro-font-logo-container">
-				<a href=""><h1>E-commerce</h1></a>
+		<div class="ro-group-container-menu">
+			<!-- Header bar of the dashboard -->
+			<header class="ro-main-header row">
+				<section class="ro-font-logo-container">
+					<a href="" class="ro-logo-ooka"><h1><small>l</small>OOK<small>from</small>A<small>bove</small></h1></a>
+				</section>
+			</header>
+			<section class="ro-menu-container row">
+				<!-- Main Menu -->
+				<nav class="ro-main-menu">
+					<ul>
+						<li class="ro-header-menu"><h2>ro-dash</h2></li>
+						
+						<li class="ro-one-lvl">
+							<a class="ro-dropdown active" href="#">
+								<i class="fa fa-desktop icon-before"></i>Add Product<i class="fa fa-caret-right icon-after"></i>
+							</a>
+							<ul>
+								<li class="ro-two-lvl"><a href=""><i class="fa fa-circle-o icon-before"></i>Submenu 1</a></li>
+								<li class="ro-two-lvl"><a href=""><i class="fa fa-circle-o icon-before"></i>Submenu 2</a></li>
+							</ul>
+						</li>
+						
+						<li class="ro-one-lvl">
+							<a class="ro-dropdown" href="#">
+								<i class="fa fa-heart icon-before"></i>Category<i class="fa fa-caret-right icon-after"></i>
+							</a>
+							<ul>
+								<li class="ro-two-lvl"><a href=""><i class="fa fa-circle-o icon-before"></i>Submenu 3</a></li>
+								<li class="ro-two-lvl"><a href=""><i class="fa fa-circle-o icon-before"></i>Submenu 4</a></li>
+							</ul>
+						</li>
+
+						<li class="ro-one-lvl">
+							<a class="ro-dropdown" href="#">
+								<i class="fa fa-graduation-cap icon-before"></i>Learning<i class="fa fa-caret-right icon-after"></i>
+							</a>
+							<ul>
+								<li class="ro-two-lvl"><a href=""><i class="fa fa-circle-o icon-before"></i>Submenu 5</a></li>
+								<li class="ro-two-lvl"><a href=""><i class="fa fa-circle-o icon-before"></i>Submenu 6</a></li>
+							</ul>
+						</li>
+
+						<li class="ro-one-lvl">
+							<a class="ro-lvl-one-item" href="#">
+								<i class="fa fa-credit-card icon-before"></i>Donations
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</section>
+		</div>
+		<div class="ro-group-container-content">
 			<section class="options-container ro-fade">
-					<div class="ro-options-container">
-						<ul class="ro-options-nav">
-							<li class="ro-menu-button">
-								<a href="#" class="ro-menu-button-link">
-									<i class="fa fa-user icon-before"></i>Username<i class="fa fa-caret-down icon-after"></i>
-								</a>
-							</li><!-- White space commented
-							--><li class="ro-menu-button">
-								<a href="#" class="ro-menu-button-link"><i class="fa fa-power-off icon-before"></i>Log out</a>
-							</li>
-						</ul>
-					</div>
+				<div class="ro-options-container">
+					<ul class="ro-options-nav">
+						<li class="ro-menu-button">
+							<a href="#" class="ro-menu-button-link">
+								<i class="fa fa-user icon-before"></i>Username<i class="fa fa-caret-down icon-after"></i>
+							</a>
+						</li><!-- White space commented
+						--><li class="ro-menu-button">
+							<a href="#" class="ro-menu-button-link"><i class="fa fa-power-off icon-before"></i>Log out</a>
+						</li>
+					</ul>
+				</div>
 			</section>
-		</header>
-		<section class="ro-menu-container row">
-			<!-- Main Menu -->
-			<nav class="ro-main-menu">
-				<ul>
-					<li class="ro-header-menu"><h2>Menu</h2></li>
-					
-					<li class="ro-one-lvl">
-						<a class="ro-dropdown" href="#">
-							<i class="fa fa-desktop icon-before"></i>Add Product<i class="fa fa-caret-right icon-after"></i>
-						</a>
-					</li>
-					
-					<li class="ro-one-lvl">
-						<a class="ro-dropdown" href="#">
-							<i class="fa fa-heart icon-before"></i>Category<i class="fa fa-caret-right icon-after"></i>
-						</a>
-					</li>
 
-					<li class="ro-one-lvl">
-						<a class="ro-dropdown" href="#">
-							<i class="fa fa-graduation-cap icon-before"></i>Learning<i class="fa fa-caret-right icon-after"></i>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</section>
+			<section class="ro-container-content">
+				<h1 class="ro-content-title">Page Title <small>Details</small> <i class="fa fa-home icon-after"></i></h1>
+				
+				<form action="">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+				</form>
+			</section>
 
-		<section class="ro-container-content">
-			<h1 class="ro-content-title">Page Title <small>Details</small> <i class="fa fa-home icon-after"></i></h1>
 			<footer class="ro-content-footer">
 				<h1><a href="https://opensource.org/licenses/MIT">Under MIT license</a></h1>
 				<h1>Coded by: <a href="https://github.com/IsTheJack/ro-dash" target="_blank">Roberto Oliveira</a></h1>
 			</footer>
-		</section>
+		</div>
 	</div>
 
 	<!-- JS -->
 	<script src="assets/third_party/jquery/dist/jquery.min.js"></script>
-	<script src="assets/third_party/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
+	<script src="assets/js/build/src/app.js"></script>
+	<script src="assets/js/build/src/ro-dropdown.jquery.js"></script>
 </body>
 </html>
