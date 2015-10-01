@@ -6,10 +6,9 @@
 			var item = dropDown.next();
 			if (item.is( ":hidden" )) {
 				if (callback)
-					callback();	
+					callback(this);	
 				item.slideDown("medium");
 				dropDown.addClass("active");
-				dropDown.children('.fa-caret-right').removeClass('fa-caret-right').addClass('fa-caret-down');
 			}
 			else {
 			    item.slideUp("medium");

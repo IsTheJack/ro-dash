@@ -1,11 +1,17 @@
 $width-side-left: 250px
 $height-header: 60px
 
+.ro-dash
+    position: relative
+    padding-bottom: 60px
+    min-height: 100%
+
 .ro-group-container-menu
     float: left
+    height: 100%
     min-height: 100%
-    background-color: $color-two
-    border-right: 1px solid $color-two-dark-one
+    margin-left: -15px
+    position: absolute
 
 .ro-logo-ooka small
     -webkit-transition: 0.5s
@@ -28,7 +34,6 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
 
 .options-container
     background-color: $color-one
-    margin-left: $width-side-left
 
 .ro-fade
     margin-left: -15px
@@ -42,9 +47,6 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
     background: -ms-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
     background: linear-gradient(to right, darken($color-one, 6) 0%,$color-one 100%)
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($color-one, 6)', endColorstr='$color-one',GradientType=1 )
-
-.ro-options-container
-    height: inherit
 
 .ro-options-nav
     margin: 0
@@ -100,11 +102,11 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
 
 // Main Menu
 .ro-menu-container
-    position: relative
-    top: -5px
     display: block
-    background-color: $color-two
     width: $width-side-left
+    min-height: 100%
+    background-color: $color-two
+    border: 1px solid $color-two-dark-one
 
     ul, .ro-one-lvl
         width: 100%
@@ -146,6 +148,7 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
 
 .ro-header-menu
     text-align: center
+    clear: both
     h2
         font-size: 15pt !important
         margin: 0
@@ -160,15 +163,14 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
     margin: 5px 0 0 15px
 
 // Content part
-.ro-container-content
-    position: relative
+.ro-group-container-content
     margin-left: $width-side-left
+
+.ro-container-content
     margin-right: -15px
-    padding-bottom: 30px
-    min-height: 100%
 
     .ro-content-title
-        margin: 0px 0px 0px -15px
+        margin: 0 0 20px -15px
         padding: 10px 25px
         background-color: $color-two-dark-one
         color: $dark-font
