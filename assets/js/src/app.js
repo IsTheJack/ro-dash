@@ -11,4 +11,6 @@ $(document).ready(function() {
 			$(that).children('.fa-caret-right').removeClass('fa-caret-right').addClass('fa-caret-down');
 		}
 	});
+
+	$('.ro-group-container-menu').RoDashMenu();
 });
