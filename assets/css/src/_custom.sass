@@ -1,17 +1,24 @@
-$width-side-left: 250px
-$height-header: 60px
-
 .ro-dash
     position: relative
     padding-bottom: 60px
     min-height: 100%
+
+.ro-background-aside
+    float: left
+    height: 100%
+    min-height: 100%
+    margin-left: -15px
+    position: absolute
+    z-index: -1
+    width: $width-side-left
+    background-color: $color-two
+    border: 1px solid $color-two-dark-one
 
 .ro-group-container-menu
     float: left
     height: 100%
     min-height: 100%
     margin-left: -15px
-    position: absolute
 
 .ro-logo-ooka small
     -webkit-transition: 0.5s
@@ -55,6 +62,7 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
     height: inherit
 
 .ro-menu-button
+    position: relative
     display: inline-block
     text-align: center
     height: inherit
@@ -66,9 +74,27 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
     font-size: 13pt
     border-left: 1px solid darken($color-one, 6)
     height: inherit
-    &:hover
+    &:hover, &:focus, &:active
         background-color: darken($color-one, 4)
         color: $light-font
+
+
+.ro-menu-button ul
+    padding: 0
+    z-index: 999
+    width: 100%
+    padding: 5px 0
+    background-color: $color-two
+    li
+        list-style: none
+    a
+        text-align: left
+        width: 100%
+        padding: 10px 40px
+        display: inline-block
+        
+        &:hover, &:active
+            color: $color-one
 
 .ro-font-logo-container
     background-color: $color-one
@@ -105,8 +131,6 @@ a:hover, a:active, a:visited, a:focus, .ro-one-lvl
     display: block
     width: $width-side-left
     min-height: 100%
-    background-color: $color-two
-    border: 1px solid $color-two-dark-one
 
     ul, .ro-one-lvl
         width: 100%

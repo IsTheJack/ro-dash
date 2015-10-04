@@ -24,7 +24,9 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function() {
-	// Vigiando JS
+	gulp.run('uglify');
+	gulp.run('sass');
+
 	gulp.watch('assets/js/**/*.js', function(event) {
         gutil.log('File '+event.path+' was '+event.type+', running tasks...');
         gulp.run('uglify');

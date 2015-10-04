@@ -12,5 +12,11 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.ro-group-container-menu').RoDashMenu();
+	var optionMenu = $('.ro-menu-button-link');
+	optionMenu.RoDropdown(function(that) {
+		console.log(that);
+	});
+
+	// $('.ro-group-container-menu').RoDashMenu();
+	// $(window).trigger('resize');
 });
