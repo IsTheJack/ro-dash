@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ro-dash | Blank Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Font -->
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
@@ -12,15 +13,33 @@
 </head>
 <body>
 	<div class="ro-dash container-fluid">
-		<div class="ro-background-aside"></div>
-		<div class="ro-group-container-menu">
-			<!-- Logo and main menu of the dashboard -->
+		<div class="ro-group-container-top row">
 			<header class="ro-main-header">
 				<section class="ro-font-logo-container">
 					<a href="" class="ro-logo-ooka"><h1><small>l</small>OOK<small>from</small>A<small>bove</small></h1></a>
 				</section>
 			</header>
+
+			<section class="options-container ro-fade">
+				<ul class="ro-options-nav">
+					<li class="ro-menu-button">
+						<a href="#" class="ro-menu-button-link">
+							<i class="fa fa-user icon-before"></i>Username<i class="fa fa-caret-down icon-after"></i>
+						</a>
+						<ul>
+							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 1</a></li>
+							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 2</a></li>
+							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 3</a></li>
+							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 4</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="ro-group-container-down">
 			<section class="ro-menu-container">
+				<div class="ro-background-aside"></div>
 				<!-- Main Menu -->
 				<nav class="ro-main-menu">
 					<ul>
@@ -64,31 +83,12 @@
 					</ul>
 				</nav>
 			</section>
-		</div>
-
-		<div class="ro-group-container-content">
-			<section class="options-container ro-fade">
-				<ul class="ro-options-nav">
-					<li class="ro-menu-button">
-						<a href="#" class="ro-menu-button-link">
-							<i class="fa fa-user icon-before"></i>Username<i class="fa fa-caret-down icon-after"></i>
-						</a>
-						<ul>
-							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 1</a></li>
-							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 2</a></li>
-							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 3</a></li>
-							<li><a href="#"><i class="fa fa-user icon-before"></i>Option 4</a></li>
-							<li><a href="#">Logout</a></li>
-						</ul>
-					</li>
-				</ul>
-			</section>
 
 			<section class="ro-container-content">
 				<h1 class="ro-content-title">Page Title <small>Details</small> <i class="fa fa-home icon-after"></i></h1>
 				<div class="container-fluid">
 					
-					<!-- <h1 style="text-align: center">Wonder Penguins</h1>
+					<h1 style="text-align: center">Wonder Penguins</h1>
 					<div class="row">
 						<div class="col-md-6">
 							<img src="http://placepenguin.com/320/320" alt="Wonder Penguin">
@@ -96,11 +96,12 @@
 						<div class="col-md-6">
 							<img src="http://placepenguin.com/320/320" alt="Wonder Penguin">
 						</div>
-					</div> -->
+					</div>
 
 				</div>
 			</section>
 		</div>
+
 		
 		<footer class="ro-content-footer">
 			<h1><a href="https://opensource.org/licenses/MIT">Under MIT license</a></h1>
