@@ -1,7 +1,9 @@
 "use restrict";
 (function($) {
 	$.fn.RoDropdown = function (callback) {
-		this.on("click", function() {
+		this.on("click", function(e) {
+			e.preventDefault();
+			e.stopImmediatePropagation();
 			var dropDown = $(this);
 			var item = dropDown.next();
 			if (item.is( ":hidden" )) {

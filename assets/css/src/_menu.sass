@@ -1,20 +1,27 @@
 // Main Menu
-.ro-background-aside
-    float: left
-    height: 100%
-    min-height: 100%
-    position: absolute
-    z-index: -1
-    margin-top: -$height-header
-    width: $width-side-left
-    background-color: $color-two
-    border: 1px solid $color-two-dark-one
+@media screen and (min-width: $small-width)
+    .ro-background-aside
+        float: left
+        height: 100%
+        min-height: 100%
+        position: absolute
+        z-index: -1
+        margin-top: -$height-header
+        width: $width-side-left
+        background-color: $color-two
+        border: 1px solid $color-two-dark-one
 
 .ro-menu-container
-    display: block
-    width: $width-side-left
+    background-color: $color-two
+    display: none
     min-height: 100%
-    float: left
+    @media screen and (min-width: $small-width)
+        display: block
+        width: $width-side-left
+        float: left
+
+    .fa
+        width: 15px
 
     ul, .ro-one-lvl
         width: 100%
@@ -31,7 +38,7 @@
             font-size: 11pt
             padding: 15px ($width-side-left/8)
 
-        .ro-dropdown:hover, .active
+        .ro-dropdown:hover, .active, .ro-lvl-one-item:hover
             -webkit-transition: .5s
             -o-transition: .5s
             transition: .5s
@@ -40,7 +47,9 @@
             border-left: 25px solid $color-one
 
 .ro-main-menu
-    padding-bottom: $height-header * 1.5
+    padding-bottom: 30px
+    @media screen and (min-width: $small-width)
+        padding-bottom: $height-header * 1.5
 
 .ro-two-lvl
     padding-left: 25px

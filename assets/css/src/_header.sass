@@ -2,30 +2,32 @@
 .ro-font-logo-container
     background-color: $color-one
     position: relative
-    width: $width-side-left + 10
-    float: left
-    top: -5px
-    margin-right: 5px
+    @media screen and (min-width: $small-width)
+        width: $width-side-left + 10
+        float: left
+        top: -5px
+        margin-right: 5px
 
-    &:before
-        position: absolute
-        content: ""
-        right: 0
-        bottom: -5px
-        border-left: 10px solid #C54B34
-        border-bottom: 5px solid transparent
+        &:before
+            position: absolute
+            content: ""
+            right: 0
+            bottom: -5px
+            border-left: 10px solid #C54B34
+            border-bottom: 5px solid transparent
 
-    &:after
-        position: absolute
-        content: ""
-        right: 0
-        bottom: -5px
-        border-right: 10px solid #F07A63
-        border-top: 5px solid transparent
+        &:after
+            position: absolute
+            content: ""
+            right: 0
+            bottom: -5px
+            border-right: 10px solid #F07A63
+            border-top: 5px solid transparent
 
     h1
         text-align: center
-        margin: 15px 0
+        padding: 15px 0
+        margin: 0
         color: #fff
         font-size: 22pt
 
@@ -46,7 +48,8 @@
 
 .options-container
     background-color: $color-one
-    margin-left: $width-side-left
+    @media screen and (min-width: $small-width)
+        margin-left: $width-side-left
 
 .ro-fade
     height: $height-header
@@ -58,6 +61,28 @@
     background: -ms-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
     background: linear-gradient(to right, darken($color-one, 6) 0%,$color-one 100%)
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($color-one, 6)', endColorstr='$color-one',GradientType=1 )
+
+.ro-btn-toggle-main-menu
+    text-align: center
+    color: $light-font
+    float: left
+    height: 100%
+    width: $height-header
+    background-color: darken($color-one, 10)
+    display: inline-block
+    border-right: 1px solid darken($color-one, 15)
+
+    @media screen and (min-width: $small-width)
+        display: none
+
+    i
+        font-size: 3.5em
+        padding-top: 5px
+
+    &:hover, &:active, &:focus
+        background-color: darken($color-one, 14)
+        color: $light-font
+
 
 .ro-options-nav
     margin: 0

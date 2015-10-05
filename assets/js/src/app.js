@@ -14,9 +14,23 @@ $(document).ready(function() {
 
 	var optionMenu = $('.ro-menu-button-link');
 	optionMenu.RoDropdown(function(that) {
-		console.log(that);
+		$(document).mouseup(function (e) {
+			var drop = optionMenu.next()
+			if (!drop.is(e.target) && drop.has(e.target).length === 0) {
+				drop.slideUp('medium');
+			}
+		});
 	});
 
-	// $('.ro-group-container-menu').RoDashMenu();
-	// $(window).trigger('resize');
+	$('.ro-btn-toggle-main-menu').click(function(e) {
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		var mainMenu = $('.ro-menu-container');
+		if(!mainMenu.is( ":hidden" )) {
+			mainMenu.slideUp('medium');
+		}
+		else {
+			mainMenu.slideDown('medium');
+		}
+	});
 });
