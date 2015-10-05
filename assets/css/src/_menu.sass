@@ -1,0 +1,67 @@
+// Main Menu
+.ro-background-aside
+    float: left
+    height: 100%
+    min-height: 100%
+    position: absolute
+    z-index: -1
+    margin-top: -$height-header
+    width: $width-side-left
+    background-color: $color-two
+    border: 1px solid $color-two-dark-one
+
+.ro-menu-container
+    display: block
+    width: $width-side-left
+    min-height: 100%
+    float: left
+
+    ul, .ro-one-lvl
+        width: 100%
+        list-style-type: none
+        margin: 0
+        padding: 0
+
+    .ro-one-lvl
+        border-bottom: 1px solid $color-two-dark-one
+
+        .ro-dropdown, .ro-lvl-one-item
+            display: block
+            color: $color-two-dark-two
+            font-size: 11pt
+            padding: 15px ($width-side-left/8)
+
+        .ro-dropdown:hover, .active
+            -webkit-transition: .5s
+            -o-transition: .5s
+            transition: .5s
+            background-color: $color-two-dark-two
+            color: #fff
+            border-left: 25px solid $color-one
+
+.ro-main-menu
+    padding-bottom: $height-header * 1.5
+
+.ro-two-lvl
+    padding-left: 25px
+    a
+        width: 100%
+        display: block
+        margin: 5px 0
+        padding: 3px 15px
+
+    a:hover, .active
+        -webkit-transition: .3s
+        -o-transition: .3s
+        transition: .3s
+        background: $color-one
+        color: $light-font
+
+.ro-header-menu
+    text-align: center
+    clear: both
+    h2
+        font-size: 15pt !important
+        margin: 0
+        padding: 20px 0
+        color: $dark-font

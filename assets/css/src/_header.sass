@@ -1,0 +1,102 @@
+// Every in .ro-group-container-top
+.ro-font-logo-container
+    background-color: $color-one
+    position: relative
+    width: $width-side-left + 10
+    float: left
+    top: -5px
+    margin-right: 5px
+
+    &:before
+        position: absolute
+        content: ""
+        right: 0
+        bottom: -5px
+        border-left: 10px solid #C54B34
+        border-bottom: 5px solid transparent
+
+    &:after
+        position: absolute
+        content: ""
+        right: 0
+        bottom: -5px
+        border-right: 10px solid #F07A63
+        border-top: 5px solid transparent
+
+    h1
+        text-align: center
+        margin: 15px 0
+        color: #fff
+        font-size: 22pt
+
+.ro-logo-ooka small
+    -webkit-transition: 0.5s
+    -o-transition: 0.5s
+    transition: 0.5s
+    font-size: 0
+
+.ro-logo-ooka:hover small
+    -webkit-transition: 0.5s
+    -o-transition: 0.5s
+    transition: 0.5s
+    font-size: 14pt
+
+.ro-main-header section
+    height: $height-header
+
+.options-container
+    background-color: $color-one
+    margin-left: $width-side-left
+
+.ro-fade
+    height: $height-header
+    background: darken($color-one, 6)
+    background: -moz-linear-gradient(left, darken($color-one, 6) 0%, $color-one 100%)
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,darken($color-one, 6)), color-stop(100%,$color-one))
+    background: -webkit-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+    background: -o-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+    background: -ms-linear-gradient(left, darken($color-one, 6) 0%,$color-one 100%)
+    background: linear-gradient(to right, darken($color-one, 6) 0%,$color-one 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($color-one, 6)', endColorstr='$color-one',GradientType=1 )
+
+.ro-options-nav
+    margin: 0
+    padding: 0
+    float: right
+    height: inherit
+
+.ro-menu-button
+    position: relative
+    display: inline-block
+    text-align: center
+    height: inherit
+
+.ro-menu-button-link
+    display: block
+    padding: 17px 30px
+    color: $light-font
+    font-size: 13pt
+    border-left: 1px solid darken($color-one, 6)
+    height: inherit
+    &:hover, &:focus, &:active
+        background-color: darken($color-one, 4)
+        color: $light-font
+
+
+.ro-menu-button ul
+    padding: 0
+    z-index: 1
+    position: absolute
+    width: 100%
+    padding: 5px 0
+    background-color: $color-two
+    li
+        list-style: none
+    a
+        text-align: left
+        width: 100%
+        padding: 10px 40px
+        display: inline-block
+        
+        &:hover, &:active
+            color: $color-one
