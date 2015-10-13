@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/IsTheJack/ro-dash#readme",
   "devDependencies": {
-    "browser-sync": "^2.9.7",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.6.0",
