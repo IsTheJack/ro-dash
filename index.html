@@ -13,6 +13,9 @@
     <!-- Alertify CSS -->
     <link rel="stylesheet" type="text/css" href="node_modules/alertifyjs/build/css/alertify.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/alertifyjs/build/css/themes/default.min.css">
+
+    <!-- CKEditor JS -->
+    <script src="assets/third_party/ckeditor/ckeditor.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -268,6 +271,13 @@
                     <button class="btn btn-danger" onclick="alertify.alert('Alert' ,'Lorem ipsum dolor sit amet.')">Click here for alert!</button><hr>
                     <button class="btn btn-warning" onclick="alertify.confirm('Confirm', 'This is a new message!', null, null)">Click here for confirm!</button><hr>
                     <button class="btn btn-primary" onclick="alertify.prompt('Prompt', 'This is a new prompt!', null, null, null);">Click here for prompt!</button><hr>
+
+                    <h2>Editor (CKEditor)</h2>
+                    <form>
+                        <textarea name="editor1" id="editor1" rows="10" cols="80">
+                            This is my textarea to be replaced with CKEditor.
+                        </textarea>
+                    </form>
                 </div>
             </section>
         </div>

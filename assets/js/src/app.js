@@ -33,4 +33,6 @@ $(document).ready(function() {
 			mainMenu.slideDown('medium');
 		}
 	});
+
+	CKEDITOR.replace( 'editor1' );
 });
